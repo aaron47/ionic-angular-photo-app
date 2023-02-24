@@ -1,19 +1,19 @@
 import { ExploreContainerModule } from './../explore-container/explore-container.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+import { PhotosPageRoutingModule } from './photos-routing.module';
+import { PhotosPage } from './photos.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    PhotosPageRoutingModule,
     ExploreContainerModule,
-    HomePageRoutingModule,
   ],
-  declarations: [HomePage],
+  declarations: [PhotosPage],
 })
-export class HomePageModule {}
+export class PhotosPageModule {}
